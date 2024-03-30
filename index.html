@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special-Moments</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gallery-wrap">
+        <img src="back.png" id="backbtn">
+        <div class="gallery">
+            <div>
+                <span><img src="s1.jpg"></span>
+                <span><img src="s2.jpg"></span>
+                <span><img src="s3.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s4.jpg"></span>
+                <span><img src="s5.jpg"></span>
+                <span><img src="s6.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s8.jpg"></span>
+                <span><img src="s9.jpg"></span>
+                <span><img src="s10.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s12.jpg"></span>
+                <span><img src="s13.jpg"></span>
+                <span><img src="s14.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s15.jpg"></span>
+                <span><img src="s16.jpg"></span>
+                <span><img src="s17.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s7.jpg"></span>
+                <span><img src="s18.jpg"></span>
+                <span><img src="s19.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s20.jpg"></span>
+                <span><img src="s24.jpg"></span>
+                <span><img src="s21.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s22.jpg"></span>
+                <span><img src="s23.jpg"></span>
+                <span><img src="s25.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s26.jpg"></span>
+                <span><img src="s27.jpg"></span>
+                <span><img src="s28.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s29.jpg"></span>
+                <span><img src="s30.jpg"></span>
+                <span><img src="s31.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s32.jpg"></span>
+                <span><img src="s33.jpg"></span>
+                <span><img src="s34.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s35.jpg"></span>
+                <span><img src="s36.jpg"></span>
+                <span><img src="s37.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s38.jpg"></span>
+                <span><img src="s40.jpg"></span>
+                <span><img src="s41.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s42.jpg"></span>
+                <span><img src="s43.jpg"></span>
+                <span><img src="s44.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s45.jpg"></span>
+                <span><img src="s46.jpg"></span>
+                <span><img src="s47.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s48.jpg"></span>
+                <span><img src="s49.jpg"></span>
+                <span><img src="s50.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s51.jpg"></span>
+                <span><img src="s52.jpg"></span>
+                <span><img src="s53.jpg"></span>
+            </div>
+            <div>
+                <span><img src="s54.jpg"></span>
+                <span><img src="s55.jpg"></span>
+                <span><img src="s56.jpg"></span>
+            </div>
+        </div>
+        <img src="next.png" id="nextbtn">
+    </div>
+    
+    <script>
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backbtn");
+        let nextBtn = document.getElementById("nextbtn");
+        
+        scrollContainer.addEventListener("wheel",(evt)=>{
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+        });
+        nextBtn.addEventListener("click",()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 900;
+        });
+        backBtn.addEventListener("click",()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 900;
+        });
+
+
+    </script>
+</body>
+</html>
