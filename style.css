@@ -29,6 +29,7 @@ body{
     display: none;
 }
 .gallery-wrap{
+    border: 2px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
